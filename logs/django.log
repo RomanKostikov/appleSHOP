@@ -2784,3 +2784,33 @@ RuntimeError: You called this URL via POST, but the URL doesn't end in a slash a
 [INFO    :             django.server] - 2024-02-27 22:51:50,361 : log_message @0187: "POST /checkout/ HTTP/1.1" 200 69720
 [INFO    :             django.server] - 2024-02-27 22:51:54,358 : log_message @0187: "POST /checkout/ HTTP/1.1" 302 0
 [INFO    :             django.server] - 2024-02-27 22:51:54,369 : log_message @0187: "GET /checkout/ HTTP/1.1" 200 64670
+[INFO    :   django.utils.autoreload] - 2024-03-28 14:49:08,576 : run_with_reloader @0677: Watching for file changes with StatReloader
+[DEBUG   :                main.views] - 2024-03-28 14:49:14,911 : home @0028: Home page requested.
+[INFO    :                main.views] - 2024-03-28 14:49:14,911 : home @0029: Home
+[INFO    :             django.server] - 2024-03-28 14:49:14,956 : log_message @0187: "GET / HTTP/1.1" 200 69083
+[INFO    :             django.server] - 2024-03-28 14:49:16,323 : log_message @0187: "GET /static/css/style.css HTTP/1.1" 200 2419
+[INFO    :             django.server] - 2024-03-28 14:49:16,370 : log_message @0187: "GET /static/js/scripts.js HTTP/1.1" 200 5727
+[INFO    :             django.server] - 2024-03-28 14:49:16,424 : log_message @0187: "GET /static/img/final.jpg HTTP/1.1" 200 2254388
+[INFO    :             django.server] - 2024-03-28 14:49:16,634 : log_message @0187: "GET /media/products_images/Apple_iPhone_14_Pro_1_TB_AztONKy_9hFVf48.jpg HTTP/1.1" 200 109410
+[INFO    :             django.server] - 2024-03-28 14:49:16,696 : log_message @0187: "GET /media/products_images/14.2_Apple_MacBook_Pro_14_2023_gl6CeDi.jpg HTTP/1.1" 200 34258
+[INFO    :             django.server] - 2024-03-28 14:49:16,699 : log_message @0187: "GET /media/products_images/Apple_MacBook_Air_13.6_A2681_M2_8_core_16Gb_SSD512Gb_FNynNMV.jpg HTTP/1.1" 200 48172
+[INFO    :             django.server] - 2024-03-28 14:49:16,707 : log_message @0187: "GET /media/products_images/Apple_iPhone_13_512_GB_p1k20en_d0TGGrD.jpg HTTP/1.1" 200 157340
+[INFO    :             django.server] - 2024-03-28 14:49:16,917 : log_message @0187: "GET /static/img/Apple_Store_logo.svg.png HTTP/1.1" 200 2883
+[DEBUG   :                main.views] - 2024-03-28 14:49:21,245 : home @0028: Home page requested.
+[INFO    :                main.views] - 2024-03-28 14:49:21,245 : home @0029: Home
+[INFO    :             django.server] - 2024-03-28 14:49:21,255 : log_message @0187: "GET / HTTP/1.1" 200 69083
+[DEBUG   :                main.views] - 2024-03-28 14:49:22,845 : home @0028: Home page requested.
+[INFO    :                main.views] - 2024-03-28 14:49:22,845 : home @0029: Home
+[INFO    :             django.server] - 2024-03-28 14:49:22,854 : log_message @0187: "GET / HTTP/1.1" 200 69083
+[INFO    :             django.server] - 2024-03-28 14:49:32,370 : log_message @0187: "GET /phone HTTP/1.1" 200 74252
+[INFO    :             django.server] - 2024-03-28 14:49:32,416 : log_message @0187: "GET /media/products_images/Apple_iPhone_14_Pro_512_GB_RF4lToO_7RcI1Zl.jpg HTTP/1.1" 200 109410
+[INFO    :             django.server] - 2024-03-28 14:49:32,418 : log_message @0187: "GET /media/products_images/Apple_iPhone_14_Pro_256_GB_paPwT3B_8CMdVGC.jpg HTTP/1.1" 200 109410
+[INFO    :             django.server] - 2024-03-28 14:49:32,428 : log_message @0187: "GET /media/products_images/Apple_iPhone_13_256_GB_aUfXP27.jpg HTTP/1.1" 200 157340
+[INFO    :             django.server] - 2024-03-28 14:49:32,429 : log_message @0187: "GET /media/products_images/Apple_iPhone_13_128_GB_mLtnsej.jpg HTTP/1.1" 200 157340
+[INFO    :             django.server] - 2024-03-28 14:49:32,430 : log_message @0187: "GET /media/products_images/Apple_iPhone_11_128_GB_fUYawLH_wTiBtsB.jpg HTTP/1.1" 200 230786
+[INFO    :             django.server] - 2024-03-28 14:49:32,431 : log_message @0187: "GET /media/products_images/Apple_iPhone_11_256_GB_HiU9wGK_BdrBc4L.jpg HTTP/1.1" 200 230786
+[INFO    :             django.server] - 2024-03-28 14:49:32,435 : log_message @0187: "GET /media/products_images/Apple_iPhone_12_Mini_256_GB_nB7aftA_D3lUlhh.jpg HTTP/1.1" 200 168630
+[INFO    :             django.server] - 2024-03-28 14:49:32,436 : log_message @0187: "GET /media/products_images/Apple_iPhone_12_Mini_128_GB_q9PQ5QT_oJwDaP1.jpg HTTP/1.1" 200 168630
+[INFO    :             django.server] - 2024-03-28 14:49:33,609 : log_message @0187: "GET /product/3/ HTTP/1.1" 200 72459
+[INFO    :             django.server] - 2024-03-28 14:49:33,648 : log_message @0187: "GET /media/products_images/Apple_iPhone_14_Pro_BACK_h8KNQsi.jpg HTTP/1.1" 200 23008
+[INFO    :             django.server] - 2024-03-28 14:49:33,649 : log_message @0187: "GET /media/products_images/Apple_iPhone_14_Pro_FRONT_gTfzlXK.jpg HTTP/1.1" 200 60272

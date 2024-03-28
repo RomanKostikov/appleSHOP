@@ -14,6 +14,10 @@
 ```
 git clone https://github.com/RomanKostikov/appleSHOP.git
 ```
+Можно сразу перейти в рабочую папку проекта и запустить проект(т.к БД и ВО тоже на GH):
+```
+python manage.py runserver
+```
 
 2. Установите и активируйте виртуальное окружение:
 
