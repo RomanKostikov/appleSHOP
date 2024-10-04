@@ -4,23 +4,32 @@
 
 {% block content %}
 <div class="container">
-    <div class="row" style="
-    padding: 40px;">
-        <div class="col-lg-6">
-            {% for image_item in product.productimage_set.all %}
-            <div class="product-image-item">
-                <img src="{{ image_item.image.url }}" class="img-responsive">
+    <div class="row" style="padding: 40px;">
+        <!-- Левая колонка с миниатюрами -->
+        <div class="col-lg-2">
+            <div class="thumbnails">
+                {% for image_item in product.productimage_set.all %}
+                <div class="thumbnail-item">
+                    <img src="{{ image_item.image.url }}" class="img-thumbnail" data-full="{{ image_item.image.url }}">
+                </div>
+                {% endfor %}
             </div>
-            {% endfor %}
         </div>
+
+        <!-- Правая колонка с основным изображением -->
         <div class="col-lg-6">
+            <div class="main-image-container">
+                <img id="main-image" src="{{ product.productimage_set.first.image.url }}" class="main-image img-responsive">
+            </div>
+        </div>
+
+        <!-- Описание товара -->
+        <div class="col-lg-4">
             <h1 class="product-text-center">
                 {{ product.name }}
             </h1>
-            <div class="">
-                <p>
-                    Price: {{ product.price }} RUB
-                </p>
+            <div>
+                <p>Price: {{ product.price }} RUB</p>
             </div>
             <div>
                 <!-- Nav tabs -->

@@ -52,7 +52,7 @@ content: none;
 
 .footer{
     position: relative;
-    margin-top: -180px; /* negative value of footer height */
+    margin-top: -70px; /* negative value of footer height */
     height: 180px;
     clear: both;
     background-color: white;
@@ -154,4 +154,37 @@ content: none;
 .text-center2{
     text-align: center;
     padding: 0px;
+}
+
+.thumbnails {
+    margin-left: -200px;  /* Сдвиг миниатюр левее */
+    margin-top: 200px;   /* Сдвиг миниатюр ниже */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main-image-container {
+    position: relative;
+    left: -140px;  /* Сдвиг главного изображения левее */
+    top: 200px;   /* Сдвиг главного изображения ниже */
+}
+
+.thumbnail-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.main-image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+}
+
+.main-image:hover {
+    transform: scale(1.5); /* Увеличение при наведении */
+    cursor: zoom-in;
 }
