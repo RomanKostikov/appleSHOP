@@ -1,37 +1,37 @@
-html, body{
+html, body {
     height: 100%;
     max-height: 100%;
     font-family: 'Roboto', sans-serif;
     background-color: lightgrey;
 }
 
-.navbar{
+.navbar {
     margin-bottom: 0;
 }
 
-.navbar-mini{
+.navbar-mini {
     min-height: 30px;
     height: 20px;
     background-color: grey;
 
 }
 
-ul.nav li.dropdown:hover ul.dropdown-menu{
-display: block;
-margin: 0;
+ul.nav li.dropdown:hover ul.dropdown-menu {
+    display: block;
+    margin: 0;
 }
 
 a.menu:after, .dropdown-toggle:after {
-content: none;
+    content: none;
 }
 
-.basket-container{
+.basket-container {
     position: relative;
     width: 400px;
     padding: 15px 10px;
 }
 
-.basket-items2{
+.basket-items2 {
     position: absolute;
     top: 50px;
     width: 100%;
@@ -40,17 +40,17 @@ content: none;
     padding: 10px;
 }
 
-.wrapper{
+.wrapper {
     min-height: 100%;
     padding-top: 0px;
 }
 
-.wrapper-content{
+.wrapper-content {
     overflow: auto;
     padding-bottom: 180px; /* must be same height as the footer */
 }
 
-.footer{
+.footer {
     position: relative;
     margin-top: -70px; /* negative value of footer height */
     height: 180px;
@@ -58,23 +58,23 @@ content: none;
     background-color: white;
 }
 
-.section-top{
+.section-top {
     margin-bottom: 20px
 }
 
-.product-description-tabs{
+.product-description-tabs {
     padding: 10px;
 }
 
-.section{
+.section {
     padding: 80px 0;
 }
 
-.section h1{
+.section h1 {
     margin-bottom: 40px;
 }
 
-.product-item{
+.product-item {
     height: 520px;
     background-color: white;
     border: 1px solid grey;
@@ -84,24 +84,24 @@ content: none;
     margin-bottom: 10px;
 }
 
-.product-text-center{
+.product-text-center {
     margin-top: 64px;
     text-align: center;
 }
 
-.deliveryandpayment-text{
+.deliveryandpayment-text {
     margin-top: 29px;
 }
 
-.contacts-text{
+.contacts-text {
     margin-top: 68px;
 }
 
-.description-top{
+.description-top {
     margin: 10px;
 }
 
-.add-to-card-btn{
+.add-to-card-btn {
     position: absolute;
     bottom: 15px;
     left: 50%;
@@ -109,12 +109,12 @@ content: none;
 }
 
 
-.product-image-top{
+.product-image-top {
     max-width: 210px;
     max-height: 280px;
 }
 
-.discount-container{
+.discount-container {
     position: absolute;
     top: 10%;
     background: #55e073;
@@ -124,50 +124,50 @@ content: none;
     padding: 3px;
 }
 
-.section-delivery{
+.section-delivery {
     height: 300px;
     background-color: darkseagreen;
     text-align: center;
     color: white;
 }
 
-.product-image-item{
+.product-image-item {
     padding: 70px;
     margin-bottom: 5px;
 }
 
-.form-error{
- color: red;
+.form-error {
+    color: red;
 }
 
-.checkout-text-center{
+.checkout-text-center {
     margin-top: 70px;
     text-align: center;
     padding: 50px;
 }
 
-.text-center1{
+.text-center1 {
     text-align: center;
     padding: 80px;
 }
 
-.text-center2{
+.text-center2 {
     text-align: center;
     padding: 0px;
 }
 
 .thumbnails {
-    margin-left: -200px;  /* Сдвиг миниатюр левее */
-    margin-top: 200px;   /* Сдвиг миниатюр ниже */
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin-left: -200px; /* Сдвиг миниатюр левее для ПК */
+    margin-top: 200px; /* Сдвиг миниатюр ниже для ПК */
 }
 
 .main-image-container {
     position: relative;
-    left: -140px;  /* Сдвиг главного изображения левее */
-    top: 200px;   /* Сдвиг главного изображения ниже */
+    left: -140px; /* Сдвиг главного изображения левее для ПК */
+    top: 200px; /* Сдвиг главного изображения ниже для ПК */
 }
 
 .thumbnail-item img {
@@ -187,4 +187,43 @@ content: none;
 .main-image:hover {
     transform: scale(1.5); /* Увеличение при наведении */
     cursor: zoom-in;
+}
+
+/* Адаптивные стили для мобильных устройств с шириной экрана меньше 768px */
+@media (max-width: 1024px) {
+    .thumbnails {
+        display: flex;
+        flex-direction: row; /* Миниатюры в одну линию */
+        justify-content: center;
+        gap: 10px;
+        margin-left: 0; /* Убираем отрицательные сдвиги для мобильных устройств */
+        margin-top: 100px; /* Сдвиг ниже для мобильных устройств */
+    }
+
+    .thumbnail-item img {
+        width: 60px; /* Уменьшаем размер миниатюр */
+        height: auto;
+    }
+
+    .main-image-container {
+        text-align: center; /* Центрируем главное изображение на мобильных устройствах */
+        left: 0; /* Убираем сдвиг для мобильных устройств */
+        top: 50px; /* Добавляем небольшой отступ сверху */
+    }
+
+    .main-image {
+        width: 90%; /* Ширина основного изображения 90% экрана */
+        height: auto;
+        max-width: 400px; /* Максимальная ширина изображения */
+    }
+
+    .main-image:hover {
+    transform: scale(1.1); /* Увеличение при наведении */
+    cursor: zoom-in;
+    }
+
+    .product-text-center {
+    margin-top: 85px;
+    text-align: center;
+    }
 }
